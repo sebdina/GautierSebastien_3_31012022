@@ -1,0 +1,93 @@
+html {
+    box-sizing: border-box;
+    /* box-sizing est appliqué à 
+    tous les éléments*/
+    font-family: "Roboto", sans-serif;
+    font-size: 18px;
+  }
+
+  body {
+    /*text-align: center; /*centrer tous 
+    les éléments sur le corps de page*/
+
+    /*border: 2px solid red;*/
+  }
+
+  header {
+    text-align: center; /*centrer tous 
+    les éléments du header sur le corps de page*/
+
+  }
+
+  #presentation, footer {
+    margin: 0 auto; /*centrer le corps de page*/
+    width: 80%; /* ne prend pas 
+    toute la largeur de l'écran*/
+
+    /*border: 2px solid blue;*/
+  }
+
+  #fonctionnement, #restaurants {
+    margin: 0 auto; /*centrer le corps de page*/
+    width: 90%; /* ne prend pas 
+    toute la largeur de l'écran*/
+
+  }
+
+  p {
+    font-weight:lighter;
+  }
+
+  a {
+    text-decoration: none;
+    color: #000;
+  }
+
+  #localisation p {
+    font-weight:initial;
+  }
+
+  .cardlink {
+    height: 100%; /*pour que toute la card soit 
+    clicable en lien*/
+  }
+
+  .figtitle {
+    font-weight:bolder;
+  }
+
+  figure {
+    margin: 0 auto; /*centrer dans le container*/
+    width: 100%;
+    height: 250px;
+    background-color: #fff;
+    border-radius: 15px;
+    margin-bottom: 20px; /*espace entre chaque card*/
+    box-shadow: 2px 2px 2px #deebff;  /*léger effet ombre derrière la card*/
+  
+  }
+
+  figure img {
+    height: 75%;
+    width: 100%; /*image centrée sur la card*/
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    object-fit: cover; /*pour que l'image ne se déforme pas*/
+  }
+
+  .figcaption {
+    line-height: 1.3;
+    margin-top: 5px;/* léger décalage du texte 
+    vers le bas*/
+    margin-left: 10px; /* léger décalage du texte 
+    sur la droite*/
+  }
+
+  .heart-icon{
+    float: right;
+  }
+
+  footer img {
+    width: 30%;
+    margin-bottom: 10px;
+  }
