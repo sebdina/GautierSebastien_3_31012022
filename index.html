@@ -9,7 +9,7 @@
     <link rel="stylesheet" type="text/css" href="css/styles.css">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;700&family=Shrikhand&display=swap"
         rel="stylesheet">
-    <script src="https://kit.fontawesome.com/42366af343.js" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/4bb3da41d2.js" crossorigin="anonymous"></script>
     <title></title>
 </head>
 
@@ -18,10 +18,13 @@
     <header>
 
         <img src="images/logo/ohmyfood@2x.svg" alt="logo ohmyfood">
-        <div id="localisation">
-            <p>Paris, Belleville</p>
+        <div class="localisation">
+            <div>
+                <i id="searchmarker" class="fas fa-map-marker-alt"></i>
+                <span>&nbsp&nbspParis, Belleville</span>
+            </div>
         </div>
-        <div id="presentation">
+        <div class="presentation">
 
             <h1>Réservez le menu qui vous convient</h1>
             <p>découvrez des restaurants d'exception sélectionnés par nos soins</p>
@@ -29,27 +32,35 @@
                 <button id="btn-explorer" formaction="#restaurants">Explorer nos restaurants</button>
             </form>
 
-
         </div>
 
     </header>
 
     <main>
 
-        <section id="fonctionnement">
-
+        <section class="fonctionnement">
             <h1>Fonctionnement</h1>
-            <ol>
-                <li><a href="#choisir">Choisissez un restaurant</a></li>
-                <li><a href="#composer">Composez votre menu</a></li>
-                <li><a href="#deguster">Dégustez au restaurant</a></li>
-            </ol>
+          
+                <button class="btn" type="button"><span class="circle">1</span>
+                    <i class="fa-solid fa-mobile-screen-button"></i>
+                    <span>&nbsp&nbsp&nbspChoisissez un restaurant</span>
+                </button>
+
+                <button class="btn" type="button"><span class="circle">2</span>
+                    <i class="fa-solid fa-list"></i>
+                    <span>&nbsp&nbsp&nbspComposez votre menu</span>
+                </button>
+
+                <button class="btn" type="button"><span class="circle">3</span>
+                    <i class="fa-solid fa-store"></i>
+                    <span>&nbsp&nbsp&nbspDégustez au restaurant</span>
+                </button>
 
 
         </section>
 
 
-        <section id="restaurants">
+        <section class="restaurants">
 
             <figure>
                 <a href="#laPalette" class="figlink">
@@ -57,9 +68,9 @@
                         <img src="images/resto/jay-wennington-N_Y88TWmGwA-unsplash.jpg" alt="La palette du goût">
                         <div class="figcaption"><span class="figtitle">La palette du goût</span><br>
                             Ménilmontant
-                            <div class="heart-icon">
+                            
                                 <i class="far fa-heart fa-lg"></i>
-                            </div>
+                            
                         </div>
                     </div>
                 </a>

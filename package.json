@@ -1,0 +1,19 @@
+{
+  "name": "p3_gautier_sebastien",
+  "version": "1.0.0",
+  "description": "projet Ohmyfood",
+  "main": "index.hmtl",
+  "scripts": {
+    "sass": "sass --watch ./sass/main.scss:./css/style.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sebdina/P3_gautier_sebastien.git"
+  },
+  "author": "sebastien gautier",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/sebdina/P3_gautier_sebastien/issues"
+  },
+  "homepage": "https://github.com/sebdina/P3_gautier_sebastien#readme"
+}

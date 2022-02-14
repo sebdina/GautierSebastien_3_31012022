@@ -10,28 +10,8 @@ html {
     /*text-align: center; /*centrer tous 
     les éléments sur le corps de page*/
 
-    /*border: 2px solid red;*/
-  }
-
-  header {
-    text-align: center; /*centrer tous 
-    les éléments du header sur le corps de page*/
-
-  }
-
-  #presentation, footer {
-    margin: 0 auto; /*centrer le corps de page*/
-    width: 80%; /* ne prend pas 
-    toute la largeur de l'écran*/
-
-    /*border: 2px solid blue;*/
-  }
-
-  #fonctionnement, #restaurants {
-    margin: 0 auto; /*centrer le corps de page*/
-    width: 90%; /* ne prend pas 
-    toute la largeur de l'écran*/
-
+    /*border: 2px solid red; */
+  
   }
 
   p {
@@ -43,9 +23,110 @@ html {
     color: #000;
   }
 
-  #localisation p {
+  h1 {
+    font-size: 30px;
+  }
+
+  header {
+    text-align: center; /*centrer tous 
+    les éléments du header sur le corps de page*/
+    background-color: #f6f6f6;
+    margin-bottom: 50px;
+    
+
+    /*border: 2px solid blue;*/
+
+  }
+
+  header img {
+   
+    margin-top: 20px;
+    margin-bottom: 10px;
+
+    
+  }
+
+  .localisation {
+    height: 50px;
+    background-color: #eaeaea;
+    border: 1px solid #eaeaea;
+    box-shadow: inset 0px 2px 3px #d5d5d5;  
+    display: flex;
+    align-items: center; /*pour aligner verticalement icone/texte */
+
+   
+
+  }
+
+  .localisation div {
+    margin: auto; /*pour aligner horizontalement icone/texte */
+
+  }
+
+  .localisation span {
     font-weight:initial;
   }
+
+  .presentation {
+    padding-bottom: 55px;
+
+    /*border: 2px solid blue;*/
+  }
+
+  #btn-explorer {
+    height: 50px;
+    width: 220px;
+    border-radius: 30px;
+    border: none;
+    background: linear-gradient(#FF79DA, #9356DC);
+    color: #fff;
+  }
+
+  #btn-explorer:hover {
+    background: linear-gradient(#9356DC, #FF79DA);
+  }
+
+  .presentation, footer {
+    margin: 0 auto; /*centrer le corps de page*/
+    width: 80%; /* ne prend pas 
+    toute la largeur de l'écran*/
+
+    /*border: 2px solid blue;*/
+  }
+
+
+  .fonctionnement, .restaurants {
+    margin: 0 auto; /*centrer le corps de page*/
+    width: 90%; /* ne prend pas 
+    toute la largeur de l'écran*/
+
+  }
+
+  .circle {
+    border-radius: 50%;
+    padding: 1px 6px;
+    background-color: #9356DC;
+    position: relative;
+    left: -15px; /*pour décaler cercle sur la gauche*/
+   
+  }
+
+  .btn {
+    height: 75px;
+    width: 100%;
+    border-radius: 30px;
+    border: none;
+    background-color: #f6f6f6;
+    text-align: left;
+    margin-bottom: 20px;
+   
+  }
+  .btn:hover {
+  
+    background-color: #f5edff;
+   
+  }
+  
 
   .cardlink {
     height: 100%; /*pour que toute la card soit 
@@ -85,6 +166,11 @@ html {
 
   .heart-icon{
     float: right;
+  }
+
+  .fa-heart{
+    float: right;
+    margin-right: 25px;
   }
 
   footer img {
