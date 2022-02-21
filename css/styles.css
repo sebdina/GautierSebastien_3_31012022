@@ -109,7 +109,7 @@ header img {
   /*border: 2px solid blue;*/
 }
 
-#btn-explorer {
+.btn-action {
   height: 50px;
   width: 220px;
   border-radius: 30px;
@@ -124,7 +124,7 @@ header img {
   transition: all 0.5s;
 }
 
-#btn-explorer::after {
+.btn-action::after {
   content: "";
   height: 250px;
   width: 300px;
@@ -136,14 +136,14 @@ header img {
   transition: all 0.5s;
 }
 
-#btn-explorer:hover::after {
+.btn-action:hover::after {
   transform: rotate(160deg);
 }
 
-#btn-explorer:hover {
+.btn-action:hover {
   /* transform: translate(0, -3px) scale(1.1); */
   transform: scale(1.1);
-  /* box-shadow: 10px 10px #eaeaea; */
+  box-shadow: 10px 15px 2px #eaeaea;
 }
 
 .presentation {
@@ -219,6 +219,7 @@ figure {
   background-color: #fff;
   border-radius: 15px;
   margin-bottom: 20px; /*espace entre chaque card*/
+  padding-bottom: 10px;
   box-shadow: 2px 2px 2px #deebff; /*léger effet ombre derrière la card*/
 }
 
@@ -240,7 +241,7 @@ figure img {
 
 .fa-heart {
   float: right;
-  margin-right: 25px;
+  /* margin-right: 20px; */
 
   /* position:relative; */
   /* background: transparent; */
@@ -250,7 +251,7 @@ figure img {
 
 .hearts {
   float: right;
-  margin-right: 25px;
+  margin-right: 20px;
 }
 
 i.heart-fill {
@@ -262,7 +263,7 @@ i.heart-fill {
 
 .hearts:hover i.heart-fill {
   display: initial;
-  animation: showNav 800ms ease-in-out both;
+  animation: showFill 800ms ease-in-out both;
   /* opacity: 1; */
 }
 .hearts:hover i.heart-default {
@@ -271,12 +272,14 @@ i.heart-fill {
   /* opacity: 0; */
 }
 
-@keyframes showNav {
+@keyframes showFill {
   from {
     opacity: 0;
+    color: #ff79da;
   }
   to {
     opacity: 1;
+    color: #9356dc;
   }
 }
 
@@ -333,7 +336,7 @@ footer {
 }
 
 footer img {
-  width: 30%;
+  width: 100px;
   margin-bottom: 10px;
   margin-left: 20px;
 }

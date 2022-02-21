@@ -1,0 +1,164 @@
+html {
+    box-sizing: border-box;
+    /* box-sizing est appliqué à 
+      tous les éléments*/
+    font-family: "Roboto", sans-serif;
+    font-size: 18px;
+    background-color: #fff;
+  }
+
+  p {
+    font-weight: lighter;
+  }
+  
+  a {
+    text-decoration: none;
+    color: #000;
+  }
+  
+  h1 {
+    font-size: 28px;
+    font-family: Shrikhand;
+  }
+
+  h2 {
+    font-size: 20px;
+    font-weight: 400;
+    text-transform: uppercase;
+    margin-bottom: 5px;
+    
+  }
+
+  header {
+    text-align: center; /*centrer tous 
+      les éléments du header sur le corps de page*/
+    /* margin-bottom: 50px; */
+    /* margin-top: 20px; */
+    margin-bottom: 10px;
+    z-index: 0;
+    position: relative;
+  
+    /*border: 2px solid blue;*/
+  }
+
+  header .logo {
+
+    margin: auto;
+    /* visibility: hidden; */
+   
+  }
+
+
+  header div {
+    display:flex;
+    height: 60px;
+    /* justify-content: center; */
+    align-items: center;
+    
+    /* border: 2px solid blue; */
+
+  }
+.fa-arrow-left{
+    margin-left: 20px;
+    float: left;
+
+  }
+
+
+  .hero-image {
+    height: 260px;
+    width: 100%; /*image centrée sur la card*/
+    object-fit: cover; /*pour que l'image ne se déforme pas*/
+    
+  }
+
+  main {
+      background-color: #f6f6f6;
+      border-top-left-radius: 40px;
+      border-top-right-radius: 40px;
+      padding-top: 30px;
+      padding-bottom: 50px;
+      margin-top: -40px;
+      z-index: 1;
+      position: relative;
+  }
+
+  .menu {
+    margin: 0 auto; /*centrer le corps de page*/
+    width: 90%; /* ne prend pas 
+      toute la largeur de l'écran*/
+  }
+
+ 
+
+  .fa-heart {
+    float: right;
+  }
+  
+  .border {
+    width: 50px;
+    height: 0;
+    border-bottom: 3px solid #99e2d0;
+  }
+
+
+  .desserts {
+    padding-bottom: 40px;
+  }
+
+  .btn-action {
+    height: 50px;
+    width: 220px;
+    border-radius: 30px;
+    border: none;
+    background: transparent;
+    overflow: hidden;
+    color: #fff;
+    box-shadow: 2px 5px 2px #eaeaea;
+    cursor: pointer;
+    position: relative;
+    z-index: 0;
+    transition: all 0.5s;
+
+    margin-left: 80px; /* A améliorer  */
+  }
+  
+  .btn-action::after {
+    content: "";
+    height: 250px;
+    width: 300px;
+    background: linear-gradient(#ff79da, #9356dc);
+    position: absolute;
+    top: -120px;
+    left: -40px;
+    z-index: -1;
+    transition: all 0.5s;
+  }
+  
+  .btn-action:hover::after {
+    transform: rotate(160deg);
+  }
+  
+  .btn-action:hover {
+    /* transform: translate(0, -3px) scale(1.1); */
+    transform: scale(1.1);
+    box-shadow: 10px 15px 2px #eaeaea;
+  }
+
+  footer {
+    padding-top: 20px;
+    background-color: #353535;
+    color: white;
+  }
+  
+  #footerlinks a {
+    color: white;
+    line-height: 1.5;
+    margin-left: 20px;
+  }
+  
+  footer img {
+    width: 100px;
+    margin-bottom: 10px;
+    margin-left: 20px;
+  }
