@@ -89,8 +89,6 @@ html {
       toute la largeur de l'écran*/
   }
 
- 
-
   .fa-heart {
     float: right;
   }
@@ -99,6 +97,40 @@ html {
     width: 50px;
     height: 0;
     border-bottom: 3px solid #99e2d0;
+  }
+
+  .menu-card {
+    background-color: #fff;
+    border-radius: 15px;
+    padding: 20px 10px; /* petite bordure autour de la figure */
+    margin: 20px; /*espace entre chaque flex element*/
+    /* width: 25%; */
+    height: 30px;
+    line-height: 0.5;
+    cursor: pointer;
+  }  
+
+  .cardtitle {
+    font-weight: bold;
+  }
+
+  .cardtxt {
+    font-size: smaller;
+    display: inline-block;
+    
+  }
+/* 
+  .cardtxt::after {
+    content:  '25€' ;
+    font-weight: bold;
+    font-size: larger;
+    float: right;
+  } */
+
+  .cardprice {
+    font-weight: bold;
+    float: right;
+    margin-right: 10px;
   }
 
 
@@ -126,11 +158,11 @@ html {
   .btn-action::after {
     content: "";
     height: 250px;
-    width: 300px;
+    width: 250px;
     background: linear-gradient(#ff79da, #9356dc);
     position: absolute;
-    top: -120px;
-    left: -40px;
+    top: -100px;
+    left: -10px;
     z-index: -1;
     transition: all 0.5s;
   }
@@ -141,7 +173,7 @@ html {
   
   .btn-action:hover {
     /* transform: translate(0, -3px) scale(1.1); */
-    transform: scale(1.1);
+    transform: scale(1.05);
     box-shadow: 10px 15px 2px #eaeaea;
   }
 
