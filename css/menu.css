@@ -4,6 +4,7 @@ html {
       tous les éléments*/
     font-family: "Roboto", sans-serif;
     font-size: 18px;
+    color: #101010;
     background-color: #fff;
   }
 
@@ -85,7 +86,7 @@ html {
 
   .menu {
     margin: 0 auto; /*centrer le corps de page*/
-    width: 90%; /* ne prend pas 
+    width: 100%; /* ne prend pas 
       toute la largeur de l'écran*/
   }
 
@@ -99,44 +100,180 @@ html {
     border-bottom: 3px solid #99e2d0;
   }
 
+  .menu {
+    width: 90%; /* ne prend pas 
+      toute la largeur de l'écran*/
+  }
+
+  .cards{
+    margin-top: 40px;
+    margin-bottom: 40px;
+  }
+
   .menu-card {
+    display: block;
     background-color: #fff;
     border-radius: 15px;
-    padding: 20px 10px; /* petite bordure autour de la figure */
-    margin: 20px; /*espace entre chaque flex element*/
-    /* width: 25%; */
-    height: 30px;
-    line-height: 0.5;
+    padding: 10px 10px; 
+    margin: 15px 0 ; 
+    /* width: 95%; */
+    height: 50px;
+    line-height: 1.2;
     cursor: pointer;
+    overflow: hidden;
+    white-space: nowrap;
+    box-shadow: 2px 2px 2px #d5d5d5; 
+    
   }  
 
   .cardtitle {
     font-weight: bold;
+    display: inline-block;
+    overflow: hidden;
+    text-overflow:ellipsis; /*mets ... quand le texte est trop long*/
+    white-space: nowrap; /*empeche le retour à la ligne*/
+    width: 90%;
+    transition: width 0.8s ease; /* pour effet de transition sur hover on&off*/
+
+    /* border: 2px solid green; */
+    
   }
+  /* .menu-card p {
+    vertical-align:baseline;
+  } */
 
   .cardtxt {
     font-size: smaller;
     display: inline-block;
-    
+    overflow: hidden;
+    text-overflow:ellipsis; /*mets ... quand le texte est trop long*/
+    white-space: nowrap; /*empeche le retour à la ligne*/
+    width: 85%;
+    transition: width 0.8s ease; /* pour effet de transition sur hover on&off*/
+
+    /* border: 2px solid red; */
+
   }
-/* 
-  .cardtxt::after {
-    content:  '25€' ;
-    font-weight: bold;
-    font-size: larger;
-    float: right;
-  } */
 
   .cardprice {
     font-weight: bold;
-    float: right;
-    margin-right: 10px;
+
+    /* float: right;
+    margin-right: 10px; */
+  
   }
 
+  .check {
+    width: 60px;
+    height: 80px;
+    display: flex; /* pour centrer l'icone verticalement et horizontalement*/
+    justify-content: center;
+    align-items: center;
+    background-color: #99e2d0;
+    position: relative;
+    color: white; /*couleur de l'icone*/
+    bottom: 64px; 
+    left: 335px;
+    transition: transform 0.8s ease; /* pour effet de transition sur hover on&off*/
 
-  .desserts {
-    padding-bottom: 40px;
-  }
+   
+  }  
+
+  .menu-card:hover .fa-circle-check {
+    transition: transform 0.8s ease;
+    transform: rotate(360deg);
+   
+  } 
+
+  .menu-card:hover .check {
+    transform: translateX(-65px);
+   
+  }  
+
+  .menu-card:hover .cardtxt {
+    width: 65%;
+
+  } 
+
+  .menu-card:hover .cardtitle {
+    width: 85%;
+
+  } 
+
+  /* .card-container{
+    display: inline-block;
+    width: 90%;
+    text-overflow:ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+
+    border: 2px solid blue;
+    
+  }   */
+
+  /* .menu-card::after { 
+    content: "\f058";
+    font: var(--fa-font-solid); */
+    /* display: flex; 
+    /* pour centrer l'icone verticalement et horizontalement*/
+    /* justify-content: center;
+    align-items: center;
+    position: relative;
+    text-rendering: auto; 
+    color: white;  */
+    /*couleur de l'icone*/
+    /* font-size: 1.2em;  */
+    /*taille de l'icone*/
+    /* background-color: #99e2d0; */
+    /* width: 80px;
+    height: 60px;
+    bottom: 55px; 
+    left: 320px; */
+    
+
+    /* z-index: 1;*/
+  /* }  */
+
+  
+
+  /* .menu-card:hover::after {
+    transition: transform 0.8s ease;
+    transform: translateX(-80px) rotate(180deg);
+   
+  }   */
+
+  .first {
+    opacity: 0;
+    animation: fade_in_show 1s ease-in-out forwards;
+   
+}
+
+.second {
+  opacity: 0; 
+  animation: fade_in_show 1s ease-out 0.5s forwards;
+
+}
+
+.third {
+  opacity: 0;
+  animation: fade_in_show 1s ease-out 1s forwards;
+ 
+}
+
+@keyframes fade_in_show {
+    0% {
+         opacity: 0;
+         /* transform: scale(0) */
+    }
+
+    100% {
+         opacity: 1;
+         /* transform: scale(1) */
+    }
+}
+
+ 
+
 
   .btn-action {
     height: 50px;
