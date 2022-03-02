@@ -1,0 +1,20 @@
+// styles de base
+
+html {
+    box-sizing: border-box;
+    /* box-sizing est appliqué à 
+      tous les éléments*/
+    font-family: $font-family;
+    font-size: $font-size;
+    color: $font-color;
+  }
+  
+  
+  p {
+    font-weight: lighter;
+  }
+  
+  a {
+    text-decoration: none;
+    color: #000;
+  }

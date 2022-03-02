@@ -1,0 +1,26 @@
+// loader de la page d'acccueil
+
+.loader {
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient($second-color, $first-color);
+    opacity: 1;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 100;
+
+    img {
+      animation: flip-vertical-right 1.2s cubic-bezier(0.455, 0.03, 0.515, 0.955)
+        infinite alternate both;
+    }
+
+  }
+  
+  .loader {
+    animation: load-out 3s 2s;
+    animation-fill-mode: forwards;
+  }
