@@ -78,7 +78,104 @@ p {
 
 a {
   text-decoration: none;
-  color: #000;
+  color: #101010;
+}
+
+h1 {
+  font-size: 30px;
+}
+
+.localisation {
+  height: 50px;
+  background-color: #eaeaea;
+  border: 1px solid #eaeaea;
+  box-shadow: inset 0px 2px 3px #d5d5d5;
+  display: flex;
+  align-items: center;
+  /*pour aligner verticalement icone/texte */
+}
+.localisation div {
+  margin: auto;
+  /*pour aligner horizontalement icone/texte */
+}
+.localisation span {
+  font-weight: initial;
+}
+
+.presentation {
+  padding-bottom: 55px;
+  /*border: 2px solid blue;*/
+}
+
+.presentation {
+  margin: 0 auto;
+  /*centrer le corps de page*/
+  width: 80%;
+  /* ne prend pas 
+  toute la largeur de l'écran*/
+  /*border: 2px solid blue;*/
+}
+
+.fonct-cards,
+.resto-cards {
+  margin: 0 auto;
+  /*centrer le corps de page*/
+  width: 90%;
+  /* ne prend pas 
+  toute la largeur de l'écran*/
+}
+
+.fonctionnement {
+  padding-bottom: 40px;
+}
+
+.restaurants {
+  background-color: #f6f6f6;
+  padding-top: 20px;
+  padding-bottom: 40px;
+}
+
+.cardlink {
+  height: 100%;
+  /*pour que toute la card soit 
+  clicable en lien*/
+}
+
+.figtitle {
+  font-weight: bolder;
+}
+
+figure {
+  margin: 0 auto;
+  /*centrer dans le container*/
+  width: 100%;
+  height: 250px;
+  background-color: white;
+  border-radius: 15px;
+  margin-bottom: 20px;
+  /*espace entre chaque card*/
+  padding-bottom: 10px;
+  box-shadow: 2px 2px 2px #deebff;
+  /*léger effet ombre derrière la card*/
+}
+figure img {
+  height: 75%;
+  width: 100%;
+  /*image centrée sur la card*/
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+  object-fit: cover;
+  /*pour que l'image ne se déforme pas*/
+}
+
+.figcaption {
+  line-height: 1.3;
+  margin-top: 5px;
+  /* léger décalage du texte 
+  vers le bas*/
+  margin-left: 10px;
+  /* léger décalage du texte 
+  sur la droite*/
 }
 
 .btn-action {
@@ -138,71 +235,6 @@ i.icon-over {
   display: none;
 }
 
-footer {
-  padding-top: 20px;
-  background-color: #353535;
-  color: white;
-}
-footer img {
-  width: 100px;
-  margin-bottom: 10px;
-  margin-left: 20px;
-}
-
-#footerlinks a {
-  color: white;
-  line-height: 1.5;
-  margin-left: 20px;
-}
-
-h1 {
-  font-size: 30px;
-}
-
-.localisation {
-  height: 50px;
-  background-color: #eaeaea;
-  border: 1px solid #eaeaea;
-  box-shadow: inset 0px 2px 3px #d5d5d5;
-  display: flex;
-  align-items: center;
-  /*pour aligner verticalement icone/texte */
-}
-.localisation div {
-  margin: auto;
-  /*pour aligner horizontalement icone/texte */
-}
-.localisation span {
-  font-weight: initial;
-}
-
-.presentation {
-  padding-bottom: 55px;
-  /*border: 2px solid blue;*/
-}
-
-.presentation {
-  margin: 0 auto;
-  /*centrer le corps de page*/
-  width: 80%;
-  /* ne prend pas 
-  toute la largeur de l'écran*/
-  /*border: 2px solid blue;*/
-}
-
-.fonct-cards,
-.resto-cards {
-  margin: 0 auto;
-  /*centrer le corps de page*/
-  width: 90%;
-  /* ne prend pas 
-  toute la largeur de l'écran*/
-}
-
-.fonctionnement {
-  padding-bottom: 40px;
-}
-
 .circle {
   border-radius: 50%;
   padding: 1px 6px;
@@ -210,55 +242,6 @@ h1 {
   position: relative;
   left: -15px;
   /*pour décaler cercle sur la gauche*/
-}
-
-.restaurants {
-  background-color: #f6f6f6;
-  padding-top: 20px;
-  padding-bottom: 40px;
-}
-
-.cardlink {
-  height: 100%;
-  /*pour que toute la card soit 
-  clicable en lien*/
-}
-
-.figtitle {
-  font-weight: bolder;
-}
-
-figure {
-  margin: 0 auto;
-  /*centrer dans le container*/
-  width: 100%;
-  height: 250px;
-  background-color: #fff;
-  border-radius: 15px;
-  margin-bottom: 20px;
-  /*espace entre chaque card*/
-  padding-bottom: 10px;
-  box-shadow: 2px 2px 2px #deebff;
-  /*léger effet ombre derrière la card*/
-}
-figure img {
-  height: 75%;
-  width: 100%;
-  /*image centrée sur la card*/
-  border-top-left-radius: 15px;
-  border-top-right-radius: 15px;
-  object-fit: cover;
-  /*pour que l'image ne se déforme pas*/
-}
-
-.figcaption {
-  line-height: 1.3;
-  margin-top: 5px;
-  /* léger décalage du texte 
-  vers le bas*/
-  margin-left: 10px;
-  /* léger décalage du texte 
-  sur la droite*/
 }
 
 .fa-heart {
@@ -289,6 +272,23 @@ i.heart-fill {
   display: none;
   /* opacity: 0; */
   /* transition: all .5s ease-in-out; */
+}
+
+footer {
+  padding-top: 20px;
+  background-color: #353535;
+  color: white;
+}
+footer img {
+  width: 100px;
+  margin-bottom: 10px;
+  margin-left: 20px;
+}
+
+#footerlinks a {
+  color: white;
+  line-height: 1.5;
+  margin-left: 20px;
 }
 
 /*# sourceMappingURL=styles.css.map */

@@ -1,0 +1,41 @@
+//icones
+
+.circle {
+    border-radius: 50%;
+    padding: 1px 6px;
+    background-color: $first-color;
+    position: relative;
+    left: -15px; /*pour décaler cercle sur la gauche*/
+  }
+
+  .fa-heart {
+    float: right;
+    /* margin-right: 20px; */
+  
+    /* position:relative; */
+    /* background: transparent; */
+    /* overflow: hidden; */
+    /* z-index:0; */
+  }
+  
+  .hearts {
+    float: right;
+    margin-right: 20px;
+    &:hover i.heart-fill {
+      display: initial;
+      animation: showFill 800ms ease-in-out both;
+      /* opacity: 1; */
+    }
+    &:hover i.heart-default {
+      display: none;
+    
+      /* opacity: 0; */
+    }
+  }
+  
+  i.heart-fill {
+    color: $first-color;
+    display: none;
+    /* opacity: 0; */
+    /* transition: all .5s ease-in-out; */
+  }
