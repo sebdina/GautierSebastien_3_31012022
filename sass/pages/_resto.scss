@@ -1,0 +1,198 @@
+html {
+    background-color: white;
+  }
+  
+  h1 {
+    font: $font-shrikhand;
+  }
+
+  h2 {
+    font-size: 20px;
+    font-weight: 400;
+    text-transform: uppercase;
+    margin-bottom: 5px;
+    
+  }
+
+  header {
+    text-align: center; /*centrer tous 
+      les éléments du header sur le corps de page*/
+    /* margin-bottom: 50px; */
+    /* margin-top: 20px; */
+    margin-bottom: 10px;
+    z-index: 0;
+    position: relative;
+  
+    .logo {
+
+        margin: auto;
+        /* visibility: hidden; */
+       
+      }
+
+      div {
+        display:flex;
+        align-items: center;
+        height: 60px;
+        /* justify-content: center; */
+        
+        
+        /* border: 2px solid blue; */
+    
+      }
+  }
+
+  .hero-image {
+    height: 260px;
+    width: 100%; /*image centrée sur la card*/
+    object-fit: cover; /*pour que l'image ne se déforme pas*/
+    
+  }
+
+  main {
+      background-color: $lightgrey-color;
+      border-top-left-radius: 40px;
+      border-top-right-radius: 40px;
+      padding-top: 30px;
+      padding-bottom: 50px;
+      margin-top: -40px;
+      z-index: 1;
+      position: relative;
+  }
+
+  .menu {
+    margin: 0 auto; /*centrer le corps de page*/
+    width: 100%; /* ne prend pas 
+      toute la largeur de l'écran*/
+  }
+  
+  .border {
+    width: 50px;
+    height: 0;
+    border-bottom: 3px solid $third-color;
+  }
+
+  .menu {
+    width: 90%; /* ne prend pas 
+      toute la largeur de l'écran*/
+  }
+
+  .cards{
+    margin-top: 40px;
+    margin-bottom: 40px;
+  }
+
+  .menu-card {
+    display: block;
+    background-color: white;
+    border-radius: 15px;
+    padding: 10px 10px; 
+    margin: 15px 0 ; 
+    /* width: 95%; */
+    height: 50px;
+    line-height: 1.2;
+    cursor: pointer;
+    overflow: hidden;
+    white-space: nowrap;
+    box-shadow: 2px 2px 2px #d5d5d5; 
+
+    &:hover {
+      
+        .fa-circle-check {
+        transition: transform 0.8s ease;
+        transform: rotate(360deg); }
+    
+        .check {
+            transform: translateX(-65px);
+           
+          }  
+    
+          .cardtxt {
+            width: 65%;
+        
+          } 
+    
+          .cardtitle {
+            width: 85%;
+        
+          } 
+       
+      } 
+    
+  }  
+
+  .cardtitle {
+    font-weight: bold;
+    display: inline-block;
+    overflow: hidden;
+    text-overflow:ellipsis; /*mets ... quand le texte est trop long*/
+    white-space: nowrap; /*empeche le retour à la ligne*/
+    width: 90%;
+    transition: width 0.8s ease; /* pour effet de transition sur hover on&off*/
+
+    /* border: 2px solid green; */
+    
+  }
+  /* .menu-card p {
+    vertical-align:baseline;
+  } */
+
+  .cardtxt {
+    font-size: smaller;
+    display: inline-block;
+    overflow: hidden;
+    text-overflow:ellipsis; /*mets ... quand le texte est trop long*/
+    white-space: nowrap; /*empeche le retour à la ligne*/
+    width: 85%;
+    transition: width 0.8s ease; /* pour effet de transition sur hover on&off*/
+
+    /* border: 2px solid red; */
+
+  }
+
+  .cardprice {
+    font-weight: bold;
+
+    /* float: right;
+    margin-right: 10px; */
+  
+  }
+
+  .check {
+    width: 60px;
+    height: 80px;
+    display: flex; /* pour centrer l'icone verticalement et horizontalement*/
+    justify-content: center;
+    align-items: center;
+    background-color: $third-color;
+    position: relative;
+    color: white; /*couleur de l'icone*/
+    bottom: 64px; 
+    left: 335px;
+    transition: transform 0.8s ease; /* pour effet de transition sur hover on&off*/
+
+   
+  }  
+
+  .first {
+    opacity: 0;
+    animation: fade_in_show 1s ease-in-out forwards;
+   
+}
+
+.second {
+  opacity: 0; 
+  animation: fade_in_show 1s ease-out 0.5s forwards;
+
+}
+
+.third {
+  opacity: 0;
+  animation: fade_in_show 1s ease-out 1s forwards;
+ 
+}
+
+  .btn-action {
+ 
+    margin-left: 80px; /* A améliorer  */
+  }
