@@ -8,6 +8,21 @@
     left: -15px; /*pour décaler cercle sur la gauche*/
   }
 
+  .cardNew {
+    width: 100px;
+    height: 40px;
+    background-color: $third-color;
+    color: $third-color-darker;
+    font-weight: 500;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute; //pour placer ruban sur la card
+    right: 15px;
+    top: 15px;
+  }
+
+
   .fa-heart {
     float: right;
     /* margin-right: 20px; */

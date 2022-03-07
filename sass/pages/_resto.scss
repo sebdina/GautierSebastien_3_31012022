@@ -1,3 +1,5 @@
+// styles pour les pages restaurants 
+
 html {
     background-color: white;
   }
@@ -8,6 +10,7 @@ html {
   }
 
   h2 {
+    // font: 20px 400 ;
     font-size: 20px;
     font-weight: 400;
     text-transform: uppercase;
@@ -71,6 +74,12 @@ html {
     margin: 0 auto; /*centrer le corps de page*/
     width: 90%; /* ne prend pas 
       toute la largeur de l'écran*/
+  }
+
+  .hearts {
+    position: relative; // pour positionner le coeur par rapport au titre
+    top: 15px;
+    left: 15px;
   }
   
   .border {

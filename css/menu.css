@@ -122,6 +122,20 @@ i.icon-over {
   /*pour décaler cercle sur la gauche*/
 }
 
+.cardNew {
+  width: 100px;
+  height: 40px;
+  background-color: #99E2D0;
+  color: #008766;
+  font-weight: 500;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  right: 15px;
+  top: 15px;
+}
+
 .fa-heart {
   float: right;
   /* margin-right: 20px; */
@@ -223,6 +237,12 @@ main form {
   width: 90%;
   /* ne prend pas 
   toute la largeur de l'écran*/
+}
+
+.hearts {
+  position: relative;
+  top: 15px;
+  left: 15px;
 }
 
 .border {
@@ -424,19 +444,19 @@ footer img {
     height: 80%;
   }
 
-  footer {
-    display: flex;
-    justify-content: left;
-    align-items: center;
-    height: 100px;
-  }
-
   .menu-cards {
     justify-content: space-around;
   }
 
   .menu-card {
     margin: 15px 10px;
+  }
+
+  footer {
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    height: 100px;
   }
 
   .footerlinks {

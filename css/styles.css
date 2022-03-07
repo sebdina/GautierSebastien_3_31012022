@@ -172,6 +172,7 @@ figure {
   padding-bottom: 10px;
   box-shadow: 2px 2px 2px #deebff;
   /*léger effet ombre derrière la card*/
+  position: relative;
 }
 figure img {
   height: 75%;
@@ -259,6 +260,20 @@ i.icon-over {
   /*pour décaler cercle sur la gauche*/
 }
 
+.cardNew {
+  width: 100px;
+  height: 40px;
+  background-color: #99E2D0;
+  color: #008766;
+  font-weight: 500;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  right: 15px;
+  top: 15px;
+}
+
 .fa-heart {
   float: right;
   /* margin-right: 20px; */
@@ -311,7 +326,7 @@ footer img {
   margin-left: 20px;
 }
 
-@media only screen and (min-width: 768px) and (max-width: 1024px) {
+@media only screen and (min-width: 755px) and (max-width: 1024px) {
   .localisation {
     width: 40%;
     margin: 30px auto;
@@ -382,15 +397,19 @@ footer img {
     height: 80%;
   }
 
+  .menu-cards {
+    justify-content: space-around;
+  }
+
+  .menu-card {
+    margin: 15px 10px;
+  }
+
   footer {
     display: flex;
     justify-content: left;
     align-items: center;
     height: 100px;
-  }
-
-  .menu-card {
-    margin: 15px 10px;
   }
 
   .footerlinks {
