@@ -231,7 +231,7 @@ main form {
   border-bottom: 3px solid #99E2D0;
 }
 
-.cards {
+.menu-cards {
   margin-top: 20px;
   margin-bottom: 40px;
   display: flex;
@@ -347,13 +347,13 @@ footer img {
   margin-left: 20px;
 }
 
-#footerlinks a {
+.footerlinks a {
   color: white;
   line-height: 1.5;
   margin-left: 20px;
 }
 
-@media only screen and (min-width: 768px) and (max-width: 1024px) {
+@media only screen and (min-width: 755px) and (max-width: 1024px) {
   .localisation {
     width: 40%;
     margin: 30px auto;
@@ -367,7 +367,7 @@ footer img {
   }
 
   .btn {
-    width: 60%;
+    width: 40%;
     margin: 10px;
   }
 
@@ -386,6 +386,63 @@ footer img {
 
   .menu-card {
     margin: 15px 10px;
+  }
+}
+@media only screen and (min-width: 1024px) {
+  .localisation {
+    width: 40%;
+    margin: 30px auto;
+    border-radius: 15px;
+  }
+
+  .fonct-btns {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  .btn {
+    width: 30%;
+    margin: 10px;
+  }
+
+  .resto-cards {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+  }
+
+  .cards-bloc {
+    width: 40%;
+  }
+
+  figure {
+    width: 80%;
+    height: 300px;
+  }
+  figure img {
+    height: 80%;
+  }
+
+  footer {
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    height: 100px;
+  }
+
+  .menu-cards {
+    justify-content: space-around;
+  }
+
+  .menu-card {
+    margin: 15px 10px;
+  }
+
+  .footerlinks {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
   }
 }
 

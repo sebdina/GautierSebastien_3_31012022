@@ -1,6 +1,6 @@
-// media queries for tablets, >767px <1024px
+// media queries pour tablettes, >767px <1024px
 
-@media only screen and (min-width: 768px) and (max-width: 1024px) {
+@media only screen and (min-width: 755px) and (max-width: 1024px) {
    
     .localisation {
         width: 40%;
@@ -15,7 +15,7 @@
       }
 
       .btn {
-        width: 60%;
+        width: 40%;
         margin: 10px;
       }
 
