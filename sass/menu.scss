@@ -1,10 +1,8 @@
 @import 'helpers/variables';
 @import 'helpers/functions';
 @import 'layout/base';
-@import 'pages/resto';
 @import 'components/buttons';
 @import 'components/icons';
-@import 'layout/footer';
-
-
-  
+@import 'pages/resto';
+@import 'layout/footer';  
+@import 'layout/tablet';

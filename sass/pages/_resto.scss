@@ -4,6 +4,7 @@ html {
   
   h1 {
     font: $font-shrikhand;
+    margin-bottom: 30px;
   }
 
   h2 {
@@ -58,11 +59,17 @@ html {
       margin-top: -40px;
       z-index: 1;
       position: relative;
+
+      form {
+
+        text-align: center;
+
+      }
   }
 
   .menu {
     margin: 0 auto; /*centrer le corps de page*/
-    width: 100%; /* ne prend pas 
+    width: 90%; /* ne prend pas 
       toute la largeur de l'écran*/
   }
   
@@ -72,14 +79,12 @@ html {
     border-bottom: 3px solid $third-color;
   }
 
-  .menu {
-    width: 90%; /* ne prend pas 
-      toute la largeur de l'écran*/
-  }
-
   .cards{
-    margin-top: 40px;
+    margin-top: 20px;
     margin-bottom: 40px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
   }
 
   .menu-card {
@@ -87,8 +92,8 @@ html {
     background-color: white;
     border-radius: 15px;
     padding: 10px 10px; 
-    margin: 15px 0 ; 
-    /* width: 95%; */
+    margin: 15px 0; 
+    width: 320px;
     height: 50px;
     line-height: 1.2;
     cursor: pointer;
@@ -191,8 +196,3 @@ html {
   animation: fade_in_show 1s ease-out 1s forwards;
  
 }
-
-  .btn-action {
- 
-    margin-left: 80px; /* A améliorer  */
-  }
