@@ -1,0 +1,8 @@
+// extends
+
+@mixin alignXY {
+    display: flex;
+    justify-content: center; //alignement horizontal
+    align-items: center;//alignement vertical
+}
+

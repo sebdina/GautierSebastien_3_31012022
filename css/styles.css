@@ -91,7 +91,7 @@ a {
   color: #101010;
 }
 
-h1 {
+h1, h2 {
   font-size: 30px;
 }
 
@@ -201,7 +201,7 @@ figure img {
   border: none;
   background: transparent;
   overflow: hidden;
-  color: #fff;
+  color: white;
   box-shadow: 2px 5px 2px #eaeaea;
   cursor: pointer;
   position: relative;
@@ -223,12 +223,11 @@ figure img {
   transform: rotate(160deg);
 }
 .btn-action:hover {
-  /* transform: translate(0, -3px) scale(1.1); */
   transform: scale(1.1);
   box-shadow: 10px 15px 2px #eaeaea;
 }
 
-.btn {
+.fonct-btn {
   height: 75px;
   width: 100%;
   border-radius: 30px;
@@ -237,13 +236,13 @@ figure img {
   text-align: left;
   margin-bottom: 20px;
 }
-.btn:hover {
+.fonct-btn:hover {
   background-color: #f5edff;
 }
-.btn:hover i.icon-over {
+.fonct-btn:hover i.icon-over {
   display: initial;
 }
-.btn:hover i.icon-default {
+.fonct-btn:hover i.icon-default {
   display: none;
 }
 
@@ -261,14 +260,14 @@ i.icon-over {
 }
 
 .cardNew {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   width: 100px;
   height: 40px;
   background-color: #99E2D0;
   color: #008766;
   font-weight: 500;
-  display: flex;
-  justify-content: center;
-  align-items: center;
   position: absolute;
   right: 15px;
   top: 15px;
@@ -339,7 +338,7 @@ footer img {
     flex-wrap: wrap;
   }
 
-  .btn {
+  .fonct-btn {
     width: 40%;
     margin: 10px;
   }
@@ -374,7 +373,7 @@ footer img {
     flex-wrap: wrap;
   }
 
-  .btn {
+  .fonct-btn {
     width: 30%;
     margin: 10px;
   }
@@ -392,6 +391,7 @@ footer img {
   figure {
     width: 80%;
     height: 300px;
+    margin-bottom: 40px;
   }
   figure img {
     height: 80%;

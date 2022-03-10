@@ -1,4 +1,4 @@
-//icones
+//styles des icones
 
 .circle {
     border-radius: 50%;
@@ -8,15 +8,14 @@
     left: -15px; /*pour décaler cercle sur la gauche*/
   }
 
+  // Ruban Nouveau sur card
   .cardNew {
+    @include alignXY; //pour alignement horizontal et vertical du contenu
     width: 100px;
     height: 40px;
     background-color: $third-color;
     color: $third-color-darker;
     font-weight: 500;
-    display: flex;
-    justify-content: center;
-    align-items: center;
     position: absolute; //pour placer ruban sur la card
     right: 15px;
     top: 15px;

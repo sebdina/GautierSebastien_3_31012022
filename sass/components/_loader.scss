@@ -2,9 +2,7 @@
 
 .loader {
     position: fixed;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    @include alignXY; //pour alignement horizontal et vertical du contenu
     background: linear-gradient($second-color, $first-color);
     opacity: 1;
     height: 100%;
