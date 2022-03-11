@@ -2,15 +2,16 @@
 
 @media only screen and (min-width: 755px) and (max-width: 1024px) {
    
+  // centrer localisation et modifier le visuel
     .localisation {
         width: 40%;
         margin: 30px auto;
         border-radius: 15px;
       }
 
+      //rendre boutons fonct flex
       .fonct-btns {
-        display: flex;
-        justify-content: center;
+        @include alignXY(flex, center, normal);
         flex-wrap: wrap;
       }
 
@@ -27,10 +28,9 @@
           }
       }
 
+      //centrer éléments footer
       footer {
-        display: flex;
-        justify-content: center;
-        // flex-wrap: wrap;
+        @include alignXY(flex, center, normal);
       }
 
       .menu-card {

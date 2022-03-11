@@ -3,22 +3,22 @@
 .loader {
     position: fixed;
     @include alignXY; //pour alignement horizontal et vertical du contenu
-    background: linear-gradient($second-color, $first-color);
-    opacity: 1;
+    background: linear-gradient($second-color, $first-color); // dégradé avec 2 couleurs
+    opacity: 1; // page loader opaque et qui prend toute la page
     height: 100%;
     width: 100%;
     top: 0;
     left: 0;
-    z-index: 100;
+    z-index: 100; // pour que la page loader soit devant tous les autres éléments
 
     img {
       animation: flip-vertical-right 1.2s cubic-bezier(0.455, 0.03, 0.515, 0.955)
-        infinite alternate both;
+        infinite alternate; 
+        // animation sur 1.2s avec un déroulement customisé via cubic-bezier en alternance à l'infini
     }
 
   }
   
   .loader {
-    animation: load-out 3s 2s;
-    animation-fill-mode: forwards;
+    animation: load-out 3s 2s forwards; //disparition progressive de la loader page après 3s
   }

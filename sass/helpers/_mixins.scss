@@ -1,8 +1,8 @@
 // extends
 
-@mixin alignXY {
-    display: flex;
-    justify-content: center; //alignement horizontal
-    align-items: center;//alignement vertical
+@mixin alignXY ($display: flex, $content: center, $items: center ) {
+    display: $display; //type de display
+    justify-content: $content; //alignement horizontal
+    align-items: $items;//alignement vertical
 }
 

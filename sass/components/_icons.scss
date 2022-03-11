@@ -23,39 +23,28 @@
 
 
   .fa-heart {
-    float: right;
-    /* margin-right: 20px; */
-  
-    /* position:relative; */
-    /* background: transparent; */
-    /* overflow: hidden; */
-    /* z-index:0; */
+    float: right; //positionner coeur à droite
   }
   
   .hearts {
-    float: right;
-    margin-right: 20px;
+    float: right;//positionner coeur à droite
+    margin-right: 20px; //marge à droite
     &:hover i.heart-fill {
-      display: initial;
-      animation: showFill 800ms ease-in-out both;
-      /* opacity: 1; */
+      display: initial; //coeur rempli visible
+      animation: showFill 800ms ease-in-out both; //animation remplissage coeur au survol
     }
     &:hover i.heart-default {
-      display: none;
-    
-      /* opacity: 0; */
+      display: none; //coeur non visible
     }
   }
   
   i.heart-fill {
     color: $first-color;
-    display: none;
-    /* opacity: 0; */
-    /* transition: all .5s ease-in-out; */
+    display: none;// hors survol coeur rempli non visible
   }
 
+  //icone fleche retour sur page restaurant
   .fa-arrow-left{
     margin-left: 20px;
     float: left;
-
   }

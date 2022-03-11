@@ -1,208 +1,185 @@
-// styles pour les pages restaurants 
+// styles pour les pages restaurants
 
 html {
-    background-color: white;
-  }
-  
-  h1 {
-    font: $font-shrikhand;
-    margin-bottom: 30px;
-  }
+  background-color: white;
+}
 
-  h2 {
-    // font: 20px 400 ;
-    font-size: 20px;
-    font-weight: 400;
-    text-transform: uppercase;
-    margin-bottom: 5px;
-    
-  }
+h1 {
+  font: $font-shrikhand;
+  margin-bottom: 30px;
+}
 
-  header {
-    text-align: center; /*centrer tous 
+h2 {
+  font-size: 20px;
+  font-weight: 400;
+  text-transform: uppercase;
+  margin-bottom: 5px;
+}
+
+header {
+  text-align: center; /*centrer tous 
       les éléments du header sur le corps de page*/
-    /* margin-bottom: 50px; */
-    /* margin-top: 20px; */
-    margin-bottom: 10px;
-    z-index: 0;
-    position: relative;
-  
-    .logo {
+  /* margin-bottom: 50px; */
+  /* margin-top: 20px; */
+  margin-bottom: 10px;
+  z-index: 0; //pour placer l'image derrière le bloc menu
+  position: relative;
 
-        margin: auto;
-        /* visibility: hidden; */
-       
-      }
-
-      div {
-        display:flex;
-        align-items: center;
-        height: 60px;
-        margin-bottom: 20px; //espace avec l'image
-        /* justify-content: center; */
-        
-        
-        /* border: 2px solid blue; */
-    
-      }
+  .logo {
+    margin: auto;
+    /* visibility: hidden; */
   }
 
-  .hero-image {
-    height: 260px;
-    width: 100%; /*image centrée sur la card*/
-    object-fit: cover; /*pour que l'image ne se déforme pas*/
-    
+  div {
+    @include alignXY(flex, center, center);
+    height: 60px;
+    margin-bottom: 20px; //espace avec l'image
   }
+}
 
-  main {
-      background-color: $lightgrey-color;
-      border-top-left-radius: 40px;
-      border-top-right-radius: 40px;
-      padding-top: 30px;
-      padding-bottom: 50px;
-      margin-top: -40px;
-      z-index: 1;
-      position: relative;
+.hero-image {
+  height: 260px;
+  width: 100%; /*image centrée sur la card*/
+  object-fit: cover; /*pour que l'image ne se déforme pas*/
+}
 
-      form {
+main {
+  background-color: $lightgrey-color;
+  border-top-left-radius: 40px;
+  border-top-right-radius: 40px;
+  padding-top: 30px;
+  padding-bottom: 50px;
+  margin-top: -40px;
+  z-index: 1; //pour placer l'image derrière le bloc menu
+  position: relative;
 
-        text-align: center;
-
-      }
+  form {
+    text-align: center;
   }
+}
 
-  .menu {
-    margin: 0 auto; /*centrer le corps de page*/
-    width: 90%; /* ne prend pas 
+.menu {
+  margin: 0 auto; /*centrer le corps de page*/
+  width: 90%; /* ne prend pas 
       toute la largeur de l'écran*/
+}
+
+.hearts {
+  position: relative; // pour positionner le coeur par rapport au titre
+  top: 15px;
+  left: 15px;
+}
+
+.border {
+  width: 50px;
+  height: 0;
+  border-bottom: 3px solid $third-color;
+}
+
+.menu-cards {
+  margin-top: 20px;
+  margin-bottom: 40px;
+  @include alignXY(
+    flex,
+    center,
+    normal
+  ); // cards en flex centrées horizontalement
+  flex-wrap: wrap;
+}
+
+.menu-card {
+  display: block;
+  background-color: white;
+  border-radius: 15px;
+  padding: 10px 10px;
+  margin: 15px 0;
+  width: 320px;
+  height: 50px;
+  line-height: 1.2;
+  cursor: pointer; // curseur en pointeur lien au survol
+  overflow: hidden; // cache le pseudo élément au delà de sa bordure
+  white-space: nowrap; // empêche le retour à la ligne
+  box-shadow: 2px 2px 2px $mediumgrey-color; //légère ombre en dessous de la card
+
+  &:hover {
+    .fa-circle-check {
+      transition: transform 0.8s ease;
+      transform: rotate(360deg);
+    } //rotation progressive de l'icone check au survol
+
+    .check {
+      transform: translateX(
+        -65px
+      ); //déplacement progressif du pseudo élément vers la gauche
+    }
+
+    .cardtxt {
+      width: 65%; //réduction progressive du texte de la card
+    }
+
+    .cardtitle {
+      width: 85%; //réduction progressive du texte de la card
+    }
   }
+}
 
-  .hearts {
-    position: relative; // pour positionner le coeur par rapport au titre
-    top: 15px;
-    left: 15px;
-  }
-  
-  .border {
-    width: 50px;
-    height: 0;
-    border-bottom: 3px solid $third-color;
-  }
+.cardtitle {
+  font-weight: bold;
+  display: inline-block;
+  overflow: hidden;
+  text-overflow: ellipsis; /*mets ... quand le texte est trop long*/
+  white-space: nowrap; /*empeche le retour à la ligne*/
+  width: 90%;
+  transition: width 0.8s ease; /* pour effet de transition sur hover on&off*/
+}
 
-  .menu-cards{
-    margin-top: 20px;
-    margin-bottom: 40px;
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-  }
+.cardtxt {
+  font-size: smaller;
+  display: inline-block;
+  overflow: hidden;
+  text-overflow: ellipsis; /*mets ... quand le texte est trop long*/
+  white-space: nowrap; /*empeche le retour à la ligne*/
+  width: 85%;
+  transition: width 0.8s ease; /* pour effet de transition sur hover on&off*/
+}
 
-  .menu-card {
-    display: block;
-    background-color: white;
-    border-radius: 15px;
-    padding: 10px 10px; 
-    margin: 15px 0; 
-    width: 320px;
-    height: 50px;
-    line-height: 1.2;
-    cursor: pointer;
-    overflow: hidden;
-    white-space: nowrap;
-    box-shadow: 2px 2px 2px #d5d5d5; 
+.cardprice {
+  font-weight: bold;
+}
 
-    &:hover {
-      
-        .fa-circle-check {
-        transition: transform 0.8s ease;
-        transform: rotate(360deg); }
-    
-        .check {
-            transform: translateX(-65px);
-           
-          }  
-    
-          .cardtxt {
-            width: 65%;
-        
-          } 
-    
-          .cardtitle {
-            width: 85%;
-        
-          } 
-       
-      } 
-    
-  }  
+.check {
+  width: 60px;
+  height: 80px;
+  @include alignXY(
+    flex,
+    center,
+    center
+  ); /* pour centrer l'icone verticalement et horizontalement*/
+  background-color: $third-color;
+  position: relative;
+  color: white; /*couleur de l'icone*/
+  bottom: 64px;
+  left: 335px;
+  transition: transform 0.8s ease; /* pour effet de transition sur hover on&off*/
+}
 
-  .cardtitle {
-    font-weight: bold;
-    display: inline-block;
-    overflow: hidden;
-    text-overflow:ellipsis; /*mets ... quand le texte est trop long*/
-    white-space: nowrap; /*empeche le retour à la ligne*/
-    width: 90%;
-    transition: width 0.8s ease; /* pour effet de transition sur hover on&off*/
-
-    /* border: 2px solid green; */
-    
-  }
-  /* .menu-card p {
-    vertical-align:baseline;
-  } */
-
-  .cardtxt {
-    font-size: smaller;
-    display: inline-block;
-    overflow: hidden;
-    text-overflow:ellipsis; /*mets ... quand le texte est trop long*/
-    white-space: nowrap; /*empeche le retour à la ligne*/
-    width: 85%;
-    transition: width 0.8s ease; /* pour effet de transition sur hover on&off*/
-
-    /* border: 2px solid red; */
-
-  }
-
-  .cardprice {
-    font-weight: bold;
-
-    /* float: right;
-    margin-right: 10px; */
-  
-  }
-
-  .check {
-    width: 60px;
-    height: 80px;
-    display: flex; /* pour centrer l'icone verticalement et horizontalement*/
-    justify-content: center;
-    align-items: center;
-    background-color: $third-color;
-    position: relative;
-    color: white; /*couleur de l'icone*/
-    bottom: 64px; 
-    left: 335px;
-    transition: transform 0.8s ease; /* pour effet de transition sur hover on&off*/
-
-   
-  }  
-
-  .first {
-    opacity: 0;
-    animation: fade_in_show 1s ease-in-out forwards;
-   
+//apparition progressive de chaque item du menu
+.first {
+  opacity: 0;
+  animation: fade_in_show 1s ease-in-out forwards;
 }
 
 .second {
-  opacity: 0; 
+  opacity: 0;
   animation: fade_in_show 1s ease-out 0.5s forwards;
-
 }
 
 .third {
   opacity: 0;
   animation: fade_in_show 1s ease-out 1s forwards;
- 
+}
+
+.fourth {
+  opacity: 0;
+  animation: fade_in_show 1s ease-out 1.5s forwards;
 }

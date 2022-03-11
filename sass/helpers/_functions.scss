@@ -1,5 +1,6 @@
 // functions
 
+// rotation à 180° sur axe vertical par la droite
 @keyframes flip-vertical-right {
     0% {
       transform: rotateY(0);
@@ -9,6 +10,7 @@
     }
   }
 
+  //page loader qui devient invisible et passe en arrière plan progressivement
   @keyframes load-out {
     from {
       /* top: 0; */
@@ -22,6 +24,7 @@
     }
   }
 
+  // apparition progressive d'une couleur vers une autre
   @keyframes showFill {
     from {
       opacity: 0;
@@ -33,14 +36,13 @@
     }
   }
   
+  //apparition progressive
   @keyframes fade_in_show {
     0% {
          opacity: 0;
-         /* transform: scale(0) */
     }
 
     100% {
          opacity: 1;
-         /* transform: scale(1) */
     }
 }

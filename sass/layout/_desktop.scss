@@ -2,15 +2,16 @@
 
 @media only screen and (min-width: 1024px) {
    
+  // centrer localisation et modifier le visuel
     .localisation {
         width: 40%;
         margin: 30px auto;
         border-radius: 15px;
       }
 
+        //aligner les boutons fonctionnement
       .fonct-btns {
-        display: flex;
-        justify-content: center;
+        @include alignXY(flex, center, normal);
         flex-wrap: wrap;
       }
 
@@ -19,15 +20,14 @@
         margin: 10px;
       }
 
+      // rendre les cards des restos flex
       .resto-cards {
-        display: flex;
-        justify-content:space-around;
+        @include alignXY(flex, space-around, normal);
         flex-wrap: wrap;
       }
 
       .cards-bloc {
         width: 40%;
-        // margin: 10px;
       }
 
       figure {
@@ -40,8 +40,6 @@
       }
 
       .menu-cards{
-
-        // font-size: 19px;
         justify-content:space-around;
         
       }
@@ -50,19 +48,16 @@
         margin: 15px 10px; // rajoute espace horizontale entre les items de menu
     }
     
+    //aligner les éléments du footer
     footer {
-        display: flex;
-        justify-content:left;
-        align-items: center; // aligner verticalement
-        height: 100px;
-        // flex-wrap: wrap;
+      @include alignXY(flex, left, center); // aligner à gaucher et centrer verticalement
+      height: 100px;
       }
 
     .footerlinks {
 
-        display: flex;
-        justify-content: center;
-        flex-wrap: wrap;
+      @include alignXY(flex, center, normal);
+      flex-wrap: wrap;
         
       }
 

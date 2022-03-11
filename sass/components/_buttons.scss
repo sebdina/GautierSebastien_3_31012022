@@ -48,15 +48,15 @@
     text-align: left;
     margin-bottom: 20px;
     &:hover {
-      background-color: #f5edff;
+      background-color: $lightpink-color; //couleur au survol
     }
     
     &:hover i.icon-over {
-      display: initial;
+      display: initial; //effet beat sur l'icone au survol
     }
     
     &:hover i.icon-default {
-      display: none;
+      display: none; 
     }
   }
   
