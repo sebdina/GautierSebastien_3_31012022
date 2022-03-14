@@ -330,17 +330,17 @@ main form {
 
 .second {
   opacity: 0;
-  animation: fade_in_show 1s ease-out 0.5s forwards;
+  animation: fade_in_show 1s ease-in-out 0.5s forwards;
 }
 
 .third {
   opacity: 0;
-  animation: fade_in_show 1s ease-out 1s forwards;
+  animation: fade_in_show 1s ease-in-out 1s forwards;
 }
 
 .fourth {
   opacity: 0;
-  animation: fade_in_show 1s ease-out 1.5s forwards;
+  animation: fade_in_show 1s ease-in-out 1.5s forwards;
 }
 
 footer {

@@ -97,7 +97,7 @@ main {
   height: 50px;
   line-height: 1.2;
   cursor: pointer; // curseur en pointeur lien au survol
-  overflow: hidden; // cache le pseudo élément au delà de sa bordure
+  overflow: hidden; // cache l'élément check au delà de sa bordure
   white-space: nowrap; // empêche le retour à la ligne
   box-shadow: 2px 2px 2px $mediumgrey-color; //légère ombre en dessous de la card
 
@@ -110,7 +110,7 @@ main {
     .check {
       transform: translateX(
         -65px
-      ); //déplacement progressif du pseudo élément vers la gauche
+      ); //déplacement progressif de l'élément vers la gauche
     }
 
     .cardtxt {
@@ -166,20 +166,24 @@ main {
 //apparition progressive de chaque item du menu
 .first {
   opacity: 0;
-  animation: fade_in_show 1s ease-in-out forwards;
+  animation: fade_in_show 1s ease-in-out forwards; 
+  //sur 1s avec début et fin lente
 }
 
 .second {
   opacity: 0;
-  animation: fade_in_show 1s ease-out 0.5s forwards;
+  animation: fade_in_show 1s ease-in-out 0.5s forwards;
+  // décalage de 0.5s
 }
 
 .third {
   opacity: 0;
-  animation: fade_in_show 1s ease-out 1s forwards;
+  animation: fade_in_show 1s ease-in-out 1s forwards;
+  // décalage de 1s
 }
 
 .fourth {
   opacity: 0;
-  animation: fade_in_show 1s ease-out 1.5s forwards;
+  animation: fade_in_show 1s ease-in-out 1.5s forwards;
+  // décalage de 1.5s
 }

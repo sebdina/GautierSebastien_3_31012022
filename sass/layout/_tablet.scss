@@ -14,12 +14,13 @@
         @include alignXY(flex, center, normal);
         flex-wrap: wrap;
       }
-
+      // réduit largeur des boutons fonctionnement
       .fonct-btn {
         width: 40%;
         margin: 10px;
       }
-
+      
+      // réduit largeur des figures
       figure {
         width: 80%;
         height: 300px;

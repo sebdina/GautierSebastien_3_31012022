@@ -12,7 +12,7 @@
     cursor: pointer; // curseur indique un lien
     position: relative; // pour placer pseudo élément
     z-index: 0;// pour que le bouton s'affiche devant le pseudo élément
-    transition: all 0.5s;
+    transition: all 0.5s; //transition de 0.5s entre tous les états de l'élément
 
     &::after {
       content: ""; //pour générer le pseudo élément
@@ -23,7 +23,7 @@
       top: -120px;
       left: -40px;
       z-index: -1; // pour que le pseudo élément s'affiche derrière le bouton
-      transition: all 0.5s;
+      transition: all 0.5s;//transition de 0.5s entre tous les états de l'élément
     }
 
     //effet au survol du pseudo élément

@@ -31,7 +31,8 @@
     margin-right: 20px; //marge à droite
     &:hover i.heart-fill {
       display: initial; //coeur rempli visible
-      animation: showFill 800ms ease-in-out both; //animation remplissage coeur au survol
+      animation: showFill 800ms ease-in-out both; 
+      //animation remplissage coeur au survol
     }
     &:hover i.heart-default {
       display: none; //coeur non visible

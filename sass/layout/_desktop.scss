@@ -45,12 +45,14 @@
       }
 
       .menu-card {
-        margin: 15px 10px; // rajoute espace horizontale entre les items de menu
+        margin: 15px 10px; 
+        // rajoute espace horizontale entre les items de menu
     }
     
     //aligner les éléments du footer
     footer {
-      @include alignXY(flex, left, center); // aligner à gaucher et centrer verticalement
+      // aligner à gaucher et centrer verticalement
+      @include alignXY(flex, left, center); 
       height: 100px;
       }
 
